@@ -1,0 +1,113 @@
+html, body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#canvas {
+	display: block;
+}
+
+.canvas-wrapper {
+	border: 5px solid gray;
+	height: 700px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.clear-canvas-btn {
+	padding: 10px 30PX;
+	background-color: #3498db;
+	border: 1px solid #2980b9;
+	width: 100px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: Arial;
+	color: #FFF;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.clear-canvas-btn:hover {
+	background-color: #e74c3c;
+	border: 1px solid #e74c3c;
+}
+
+.colors-block {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 200px;
+	margin: 20px auto;
+}
+
+.color {
+	border: 1px solid gray;
+	margin: 10px;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.color_1 {
+	background-color: #9b59b6;
+}
+
+.color_2 {
+	background-color: #2ecc71;
+}
+
+.color_3 {
+	background-color: #2980b9;
+}
+
+.color_3 {
+	background-color: #f1c40f;
+}
+
+.color_4 {
+	background-color: #e74c3c;
+}
+
+.color_5 {
+	background-color: #95a5a6;
+}
+
+.color_6 {
+	background-color: #f39c12;
+}
+
+.color_7 {
+	background-color: #bdc3c7;
+}
+
+.color_8 {
+	background-color: #34495e;
+}
+
+.color_9 {
+	background-color: #27ae60;
+}
+
+.tickness-block__item  {
+	width: 100px;
+	background-color: #000;
+	cursor: pointer;
+	margin: 0 auto 20px;
+}
+.tickness-block__item_1 {
+	height: 5px;
+}
+
+.tickness-block__item_2 {
+	height: 10px;
+}
+
+.tickness-block__item_3 {
+	height: 15px;
+}
+
+.tickness-block {
+	margin: 20px;
+}

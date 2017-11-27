@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Socket.IO Drawing Tutorial</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="/socket.io/socket.io.js"></script>
+	</head>
+	<body>
+	<div id="sketch" class="canvas-wrapper">
+		<canvas id="canvas" class="canvas"></canvas>
+		<div class="toolbar">
+			<div class="colors-block-wrapper">
+				<div class="colors-block">
+					<div class="js-color color color_1" data-color="#9b59b6"></div>
+					<div class="js-color color color_2" data-color="#2ecc71"></div>
+					<div class="js-color color color_3" data-color="#f1c40f"></div>
+					<div class="js-color color color_4" data-color="#e74c3c"></div>
+					<div class="js-color color color_5" data-color="#95a5a6"></div>
+					<div class="js-color color color_6" data-color="#f39c12"></div>
+					<div class="js-color color color_7" data-color="#bdc3c7"></div>
+					<div class="js-color color color_8" data-color="#34495e"></div>
+					<div class="js-color color color_9" data-color="#27ae60"></div>
+				</div>
+				<div id="clearBtn" class="clear-canvas-btn"><span class="clear-canvas-btn__label">Clear</span></div>
+			</div>
+			<div class="tickness-block">
+				<div class="js-tickness tickness-block__item tickness-block__item_1" data-width="5"></div>
+				<div class="js-tickness tickness-block__item tickness-block__item_2" data-width="10"></div>
+				<div class="js-tickness tickness-block__item tickness-block__item_3" data-width="15"></div>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+	</body>
+</html>
