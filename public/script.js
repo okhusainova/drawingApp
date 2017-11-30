@@ -35,6 +35,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	var socket = io.connect();
 
+	$('#clearBtn').on('click', function(){
+	clearCanvas();
+	socket.emit('clear');
+})
+
+	function clearCanvas() {
+		context.clearRect(0, 0, canvas.width, canvas.height);
+	}
+
+
   $('.js-color').on('click', function(e) {
     const $this = $(e.currentTarget);
     color = $this.data('color');
@@ -77,4 +87,8 @@ $('.js-tickness').on('click', function (e) {
 	socket.on('draw', function(data) {
     drawLine(context, data.x1, data.y1, data.x2, data.y2, data.color, data.lineWidth);
 	});
+
+	socket.on('clear', function(){
+		clearCanvas();
+	})
 });
